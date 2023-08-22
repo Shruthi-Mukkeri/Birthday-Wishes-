@@ -6,7 +6,7 @@ body {
   text-align: center;
   margin: 0;
   font-family: "Oswald", sans-serif;
-  height: 100vh;
+  height: 100svh;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -16,6 +16,7 @@ body {
 .container {
   max-width: 400px;
   background-color: #fff;
+  padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
@@ -48,10 +49,11 @@ button {
   height: 100%;
   width: 100%;
   position: absolute;
-  top: 0;
+  inset: 0;
+  /* top: 0;
   bottom: 0;
   left: 0;
-  right: 0;
+  right: 0; */
   z-index: 6;
   background: #000;
   margin: 0;
@@ -108,11 +110,13 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
-  top: 0;
+  /* top: 0;
   bottom: 0;
-  z-index: 5;
   left: 0;
-  right: 0;
+  right: 0; */
+  inset: 0;
+  z-index: 5;
+
   transition: all 0.5s;
   /* display: none; */
 }
@@ -123,6 +127,7 @@ button {
   }
   .container {
     box-shadow: none;
+    padding: 12px;
   }
   body {
     background: #fff;
